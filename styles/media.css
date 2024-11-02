@@ -1,0 +1,151 @@
+/* Responsividade para tablets */
+
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .texto-banner {
+        font-size: 1em;
+        line-height: 1.2em;
+        width: 65%;
+        margin-top: 1em;
+    }
+    
+    button {
+        border-image-slice: 10;
+        letter-spacing: 0.075em;
+        padding: 1em 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.7em;
+        letter-spacing: 0.05em;
+    }
+    
+    #course-content {
+        padding: 3em 1em;
+    }
+    
+    .module {
+        width: 50%;
+    }
+    
+    .transform-text {
+        font-size: 2.2em;
+        width: 20%;
+        margin: 5em 0 3em 1.2em;
+    }
+
+    #professional-challenges {
+        padding: 2em 0;
+    }
+    
+    .professional-title {
+        font-size: 1.5em;
+        letter-spacing: 0.010em;
+        line-height: 30px;
+    }
+    
+    .professional-img {
+        width: 85%;
+    }
+
+    .professional-text {
+        width: 90%;
+        font-size: 1em;
+    }
+    
+    footer {
+        padding: 0.5em 0;
+        font-size: 0.8em;
+    }
+
+    .dio-logo {
+        width: 40%;
+    }
+}
+
+
+/* Responsividade para celulares */
+
+@media screen and (max-width: 480px) {
+    
+    .banner {
+        height: 500px;
+    }
+
+    .img-logo {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .texto-banner {
+        width: 80%;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        letter-spacing: 0.05em;
+    }
+    
+    #course-content {
+        padding: 3em 1em;
+    }
+
+    .content-text {
+        font-size: 1em;
+        width: 90%;
+    }
+    
+    .module {
+        width: 60%;
+        padding: 0.5em 1em;
+        font-size: 0.8em;
+    }
+    
+    #transform-world {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .transform-text {
+        text-align: center;
+        font-size: 1.8em;
+        width: 80%;
+        margin-top: 14em;
+    }
+    
+    #professional-challenges {
+        padding: 1.5em 0;
+    }
+
+    .professional-img {
+        width: 90%;
+    }
+    
+    .professional-title {
+        width: 90%;
+        font-size: 1.5em;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+    }
+
+    .professional-text {
+        width: 90%;
+        font-size: 0.8em;
+    }
+    
+    footer {
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+
+    .dio-logo {
+        width: 40%;
+    }
+}

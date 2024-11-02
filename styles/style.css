@@ -1,11 +1,10 @@
-@import url(@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
 
 :root {
     --cor-azul: #33A8DB;
     --cor-texto: #fff;
     --fundo-cinza: #252525;
-    --fonte: 'Raleway';
-
+    --fonte: 'Raleway', 'sans-serif';
 }
 
 * {
@@ -23,6 +22,7 @@ body {
 }
 
 .banner {
+    background-color: rgba(3, 12, 26, 0.8);
     background-image: url(../assets/images/banner.png);
     display: flex;
     flex-direction: column;
@@ -36,7 +36,10 @@ h1 {
     font-weight: 900;
     line-height: 46.96px;
     text-transform: uppercase;
-    color: var(--cor-azul); /*gradient*/
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Remove a cor do texto */
+    background-image: linear-gradient(#43abd8, #0d578f);
 }
 
 .texto-banner {
@@ -47,16 +50,15 @@ h1 {
 }
 
 .logo {
-    background-color: #252525;
-    opacity: 0.8;
     width: 268px;
     border-radius: 60%;
     margin: auto;
 }
 
 button {
-    color: var(--cor-azul); /*gradient*/
-    border: 3px solid;
+    color: var(--cor-azul);
+    border-image-source: linear-gradient(#43abd8, #1062a1);
+    border-image-slice: 30;
     background-color: transparent;
     text-transform: uppercase;
     font-weight: 700;
@@ -95,12 +97,11 @@ p {
     background-color: var(--fundo-cinza);
     border: 1px solid var(--cor-azul);
     border-radius: 3.5em;
+    box-shadow: inset 10px 10px 8px rgba(0, 0, 0, 0.4);
     font-size: 1em;
-    line-height: 18px;
     padding: 1em 2em;
     width: 35%;
     margin: auto;
-    /*add box shadow*/
 }
 
 span {
